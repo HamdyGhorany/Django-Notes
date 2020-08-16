@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block body %}
+<div class="container mt-5 mb-5">
+    <form method="post">
+
+        {% csrf_token %}
+        {{form.media}}
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-primary">Add Now</button>
+    </form>
+    
+    </div>
+{% endblock body %}
+    
+
+    
+
